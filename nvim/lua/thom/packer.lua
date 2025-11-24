@@ -44,4 +44,16 @@ return require('packer').startup(function(use)
   -- Cellular Automaton animations
   use('eandrju/cellular-automaton.nvim')
 
+  -- Debugger
+  use('mfussenegger/nvim-dap')
+  use('mfussenegger/nvim-dap-python')
+  use {
+      "igorlfs/nvim-dap-view",
+      config = function()
+        require("dap-view").setup({})
+      end,
+    }
+
+
 end)
+
