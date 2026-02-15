@@ -83,17 +83,17 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+# Enable true color support
+export COLORTERM=truecolor
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='nvim'
-# fi
+export EDITOR='vim'
+export VISUAL='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
@@ -153,10 +153,10 @@ tmux-setup() {
     # Create additional windows
     tmux new-window -t "$session_name": -n "nvim" -c "$working_dir"
     tmux new-window -t "$session_name": -n "clod" -c "$working_dir"
-    tmux new-window -t "$session_name": -n "notes" -c "$HOME/sandbox"
+    tmux new-window -t "$session_name": -n "git" -c "$working_dir"
     
-    # Open notes.txt in nvim in the notes window
-    tmux send-keys -t "$session_name":notes "nvim notes.txt" C-m
+    # Setup windows
+    tmux send-keys -t "$session_name":git "lazygit" C-m
     tmux send-keys -t "$session_name":nvim "venv" C-m
     tmux send-keys -t "$session_name":nvim "nvim ." C-m
     tmux send-keys -t "$session_name":clod "venv" C-m

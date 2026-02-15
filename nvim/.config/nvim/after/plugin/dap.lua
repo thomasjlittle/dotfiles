@@ -46,3 +46,4 @@ vim.keymap.set('n', '<leader>so', dap.step_over, { desc = 'Debug: Step Over' })
 vim.keymap.set('n', '<leader>sx', dap.terminate, { desc = 'Debug: Terminate' })
 vim.keymap.set('n', '<leader>du', dapview.toggle, { desc = 'Debug: Toggle UI' })
 
+

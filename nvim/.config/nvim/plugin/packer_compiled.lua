@@ -74,6 +74,17 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["99"] = {
+    config = { "\27LJ\2\n \0\0\2\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\0À\vvisual+\0\0\2\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\0À\22stop_all_requestsÄ\2\1\0\a\0\20\0!6\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0029\2\3\0005\4\5\0009\5\4\1=\5\6\0045\5\b\0005\6\a\0=\6\t\0054\6\0\0=\6\n\5=\5\v\4B\2\2\0016\2\f\0009\2\r\0029\2\14\2'\4\15\0'\5\16\0003\6\17\0B\2\4\0016\2\f\0009\2\r\0029\2\14\2'\4\15\0'\5\18\0003\6\19\0B\2\4\0012\0\0€K\0\1\0\0\15<leader>9s\0\15<leader>9v\6v\bset\vkeymap\bvim\15completion\nfiles\17custom_rules\1\0\0\1\2\0\0\26scratch/custom_rules/\rprovider\1\0\1\nmodel\22claude-sonnet-4-5\23ClaudeCodeProvider\nsetup\01799.providers\a99\frequire\0" },
+    loaded = true,
+    path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/99",
+    url = "https://github.com/ThePrimeagen/99"
+  },
+  ["FixCursorHold.nvim"] = {
+    loaded = true,
+    path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
+    url = "https://github.com/antoinemadec/FixCursorHold.nvim"
+  },
   ["cellular-automaton.nvim"] = {
     loaded = true,
     path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/cellular-automaton.nvim",
@@ -99,6 +110,12 @@ _G.packer_plugins = {
     path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["conform.nvim"] = {
+    config = { "\27LJ\2\nÒ\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\19format_on_save\1\0\2\15lsp_format\rfallback\15timeout_ms\3ô\3\21formatters_by_ft\1\0\0\vpython\1\0\0\1\4\0\0\26ruff_organize_imports\rruff_fix\16ruff_format\nsetup\fconform\frequire\0" },
+    loaded = true,
+    path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/conform.nvim",
+    url = "https://github.com/stevearc/conform.nvim"
+  },
   harpoon = {
     loaded = true,
     path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/harpoon",
@@ -114,20 +131,56 @@ _G.packer_plugins = {
     path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  neotest = {
+    loaded = true,
+    path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/neotest",
+    url = "https://github.com/nvim-neotest/neotest"
+  },
+  ["neotest-python"] = {
+    loaded = true,
+    path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/neotest-python",
+    url = "https://github.com/nvim-neotest/neotest-python"
+  },
   ["nvim-cmp"] = {
     loaded = true,
     path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-python"] = {
+    loaded = true,
+    path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/nvim-dap-python",
+    url = "https://github.com/mfussenegger/nvim-dap-python"
+  },
+  ["nvim-dap-view"] = {
+    config = { "\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rdap-view\frequire\0" },
+    loaded = true,
+    path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/nvim-dap-view",
+    url = "https://github.com/igorlfs/nvim-dap-view"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
+  ["nvim-nio"] = {
+    loaded = true,
+    path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/nvim-nio",
+    url = "https://github.com/nvim-neotest/nvim-nio"
+  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/nvim-tree/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -143,6 +196,12 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["trouble.nvim"] = {
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0" },
+    loaded = true,
+    path = "/home/thomaslittle/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
   },
   undotree = {
     loaded = true,
@@ -163,10 +222,26 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-dap-view
+time([[Config for nvim-dap-view]], true)
+try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\rdap-view\frequire\0", "config", "nvim-dap-view")
+time([[Config for nvim-dap-view]], false)
 -- Config for: vscode
 time([[Config for vscode]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\23colorscheme vscode\bcmd\bvim\0", "config", "vscode")
 time([[Config for vscode]], false)
+-- Config for: 99
+time([[Config for 99]], true)
+try_loadstring("\27LJ\2\n \0\0\2\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\0À\vvisual+\0\0\2\1\1\0\4-\0\0\0009\0\0\0B\0\1\1K\0\1\0\0À\22stop_all_requestsÄ\2\1\0\a\0\20\0!6\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0029\2\3\0005\4\5\0009\5\4\1=\5\6\0045\5\b\0005\6\a\0=\6\t\0054\6\0\0=\6\n\5=\5\v\4B\2\2\0016\2\f\0009\2\r\0029\2\14\2'\4\15\0'\5\16\0003\6\17\0B\2\4\0016\2\f\0009\2\r\0029\2\14\2'\4\15\0'\5\18\0003\6\19\0B\2\4\0012\0\0€K\0\1\0\0\15<leader>9s\0\15<leader>9v\6v\bset\vkeymap\bvim\15completion\nfiles\17custom_rules\1\0\0\1\2\0\0\26scratch/custom_rules/\rprovider\1\0\1\nmodel\22claude-sonnet-4-5\23ClaudeCodeProvider\nsetup\01799.providers\a99\frequire\0", "config", "99")
+time([[Config for 99]], false)
+-- Config for: conform.nvim
+time([[Config for conform.nvim]], true)
+try_loadstring("\27LJ\2\nÒ\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\6\0005\3\4\0005\4\3\0=\4\5\3=\3\a\0025\3\b\0=\3\t\2B\0\2\1K\0\1\0\19format_on_save\1\0\2\15lsp_format\rfallback\15timeout_ms\3ô\3\21formatters_by_ft\1\0\0\vpython\1\0\0\1\4\0\0\26ruff_organize_imports\rruff_fix\16ruff_format\nsetup\fconform\frequire\0", "config", "conform.nvim")
+time([[Config for conform.nvim]], false)
+-- Config for: trouble.nvim
+time([[Config for trouble.nvim]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
+time([[Config for trouble.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
