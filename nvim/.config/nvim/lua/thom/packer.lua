@@ -61,6 +61,13 @@ return require('packer').startup(function(use)
 	  end
   }
 
+  use {
+    'echasnovski/mini.surround',
+    config = function()
+      require('mini.surround').setup()
+    end
+  }
+
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
   use('williamboman/mason.nvim')
