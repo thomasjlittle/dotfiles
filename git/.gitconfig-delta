@@ -1,0 +1,6 @@
+[delta]
+	plus-style = syntax "#383E2A"
+	plus-emph-style = syntax "#4C5B2B"
+	minus-style = syntax "#4C1919"
+	minus-emph-style = syntax "#8D1010"
+	true-color = always
